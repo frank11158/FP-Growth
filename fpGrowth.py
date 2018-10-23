@@ -13,11 +13,11 @@ def parse_args():
     parser.add_option('-f', '--inputFile',
                          dest='input',
                          help='filename',
-                         default="./Data/Test_small.data")
+                         default="./Data/Data1.data")
     parser.add_option('-s', '--minSupport',
                          dest='minS',
                          help='minimum support',
-                         default=80,
+                         default=100,
                          type='int')
     parser.add_option('-c', '--minConfidence',
                          dest='minC',

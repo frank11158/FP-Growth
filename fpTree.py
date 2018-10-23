@@ -15,7 +15,7 @@ def constructTree(dataset, minsupport):
     # create header table
     headerTable = createHeaderTable(dataset, minsupport)
     if len(headerTable) == 0: return None, None
-    fpTree = TreeNode('Null Set', 1, None)
+    fpTree = TreeNode('root', 1, None)
 
     # scan over dataset, construct FP-tree
     for transaction, cnt in dataset.items():
